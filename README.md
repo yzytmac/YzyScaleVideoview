@@ -16,3 +16,5 @@
                         mVideoView.start();
                     }
                 });
+
+- 欢迎指正，邮箱：yzytmac@163.com
