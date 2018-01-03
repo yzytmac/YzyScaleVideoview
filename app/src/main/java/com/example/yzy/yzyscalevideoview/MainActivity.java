@@ -13,13 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mVideoView = (YzyScaleVideoView) findViewById(R.id.id_vv);
-        final String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/桂林.mp4";
         mVideoView.post(new Runnable() {
             @Override
             public void run() {
                 mVideoView.setFixedSize(mVideoView.getWidth(), mVideoView.getHeight());
                 mVideoView.invalidate();
-                mVideoView.setVideoPath(path);
+                mVideoView.setVideoPath("https://raw.githubusercontent.com/yzytmac/YzyScaleVideoview/master/桂林.mp4");
                 mVideoView.start();
             }
         });
